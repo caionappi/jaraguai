@@ -95,13 +95,16 @@
         .form-control, .form-select {
             background: #222;
             border: 1px solid #444;
-            color: #fff;
+            color: #ffffff;
         }
+
         .form-control:focus {
-            background: #222;
+            background: #222 !important;
             border-color: var(--vermelho);
             box-shadow: 0 0 0 0.25rem rgba(230,0,0,0.25);
+            color: #ffffff !important;
         }
+
         footer {
             background: #000;
             border-top: 2px solid var(--vermelho);
@@ -125,10 +128,14 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.5);
             animation: pulse 2s infinite;
         }
+
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
             70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
             100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+        .colorletra {
+            color: #ffffff;
         }
 
 
@@ -332,11 +339,13 @@ BANNER
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form class="bg-dark p-4 rounded-4 border border-secondary">
+                    <form action="https://formsubmit.co/caionappi@gmail.com" method="post" class="bg-dark p-4 rounded-4 border border-secondary formularioorcamento">
                         <h3 class="mb-4">Solicite seu Orçamento</h3>
-                        <div class="mb-3">Nome:
-                            <input type="text" class="form-control form-control-lg" placeholder="Seu nome" required>
+                        <div class="mb-3">
+                            <label class="form-label">Nome:</label>
+                            <input type="text" class="form-control form-control-lg colorletra" placeholder="Seu nome" required>
                         </div>
+                    
                         <div class="mb-3">WhatsApp:
                             <input type="tel" class="form-control form-control-lg" placeholder="Seu WhatsApp" required>
                         </div>
@@ -364,9 +373,9 @@ BANNER
     <footer class="py-4 text-center">
         <div class="container">
             <div class="social mb-3">
-                <a href="https://www.facebook.com/profile.php?id=61551390433904&ref=pl_edit_ig_profile_ac" class="text-white mx-3 fs-3"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/jaraguaiautopecas/" class="text-white mx-3 fs-3"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/5517997259256" class="text-white mx-3 fs-3"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61551390433904&ref=pl_edit_ig_profile_ac" target="_blank" class="text-white mx-3 fs-3"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/jaraguaiautopecas/" target="_blank" class="text-white mx-3 fs-3"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/5517997259256" target="_blank" class="text-white mx-3 fs-3"><i class="bi bi-whatsapp"></i></a>
             </div>
             <p>&copy; 2025 Jaraguai Mecânica e Auto Peças - Todos os direitos reservados.</p>
 
